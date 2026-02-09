@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genesis Landing Page</title>
+     <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-r from-purple-500 via-orange-700 to-blue-500 min-h-screen flex flex-col">
+<body class="bg-gradient-to-r from-purple-900 via-orange-700 to-black min-h-screen flex flex-col">
 
   <!-- Header -->
   <header class="bg-transparent px-6 py-4">
@@ -24,19 +27,20 @@
   </header>
 
   <!-- Main Content -->
-  <main class="flex-grow px-6 py-10 text-white">
-    <p class="text-lg">Smart,Fast, Always Active.</p>
-    <h1 class="text-4xl font-bold mb-4">Build, Deploy & Talk to AI 
+  <main class="flex-grow px-6 py-10 text-white text-center">
+    <p class="text-lg py-10">Smart,Fast, Always Active.</p>
+    <button class="bg-black text-white px-4 py-2 rounded">Launch App</button>
+    <h1 class="text-4xl font-bold mb-4">Build, Deploy & Talk to AI <br>
         Agents in Seconds
     </h1>
-    <p class="text-lg"> Design AI assistants that research, plan and execute
+    <p class="text-lg"> Design AI assistants that research, plan and execute<br>
         tasks--all powered by your prompts.
     </p>
   </main>
-
-  <button class="bg-white-opacity-100 text-white-600 px-4 py-2 rounded">Create Agent</button>
-  <button class="bg-white-opacity-100 text-white-600 px-4 py-2 rounded"><i class=></i>Watch Demo</button>
-
+<div class="flex space-x-4 bg-transparent grid-template-row">
+  <button class="bg-grey text-white px-4 py-2 rounded">Create Agent</button>
+  <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded"><i class="fa-fa-play px-2"></i>Watch Demo</button>
+</div>
   </div> 
   <!-- Footer -->
   <footer class="bg-transparent px-6 py-6 text-white text-center">
