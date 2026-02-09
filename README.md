@@ -3,6 +3,7 @@ SonicPulse is a premium, high-performance landing page built for the next genera
 This project focuses on a "Future-Dark" aesthetic, utilizing advanced CSS techniques to create a world-class user experience.
 
 💎 Design Philosophy
+
 ✔️ Inspired by the Genesis landing page, the UI centers around Glassmorphism and depth.
 
 ✔️ Floating Navigation: A sleek, blurred pill-shaped header that anchors the top of the page.
@@ -12,6 +13,7 @@ This project focuses on a "Future-Dark" aesthetic, utilizing advanced CSS techni
 ✔️ Premium Cards: Soft-border containers with backdrop filters to create a high-end studio feel.
 
 🚀 Key Features
+
 ✔️ Interactive Hero: A bold, typography-driven introduction with modern text gradients.
 
 ✔️ Feature Grid: Clean, hover-animated cards showcasing platform capabilities.
