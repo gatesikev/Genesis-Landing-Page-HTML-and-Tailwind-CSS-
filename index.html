@@ -22,31 +22,59 @@
         <div class="absolute -bottom-[10%] -right-[10%] w-[500px] h-[500px] bg-blue-900/20 blur-[140px] rounded-full">
         </div>
     </div>
-
-    <!-- Header -->
-    <nav
-        class="flex items-center justify-between px-6 py-4 sticky top-0 z-50 bg-[#020617]/50 backdrop-blur-md border-b border-white/10">
-        <div class="flex items-center gap-3 group">
-            <div
-                class="w-9 h-9 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg shadow-orange-500/20">
-                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                </svg>
+    <nav class="sticky top-0 z-50 bg-[#020617]/50 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3 group">
+                <div
+                    class="w-9 h-9 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg shadow-orange-500/20">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                    </svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white">SonicPulse</span>
             </div>
-            <span class="text-xl font-bold tracking-tight text-white">SonicPulse</span>
-        </div>
-        <ul class="hidden md:flex space-x-6 text-sm text-slate-300">
-            <li class="hover:text-white cursor-pointer transition">Home</li>
-            <li class="hover:text-white cursor-pointer transition">Beats</li>
-            <li class="hover:text-white cursor-pointer transition">Services</li>
-            <li class="hover:text-white cursor-pointer transition">Pricing</li>
-        </ul>
-        <button
-            class="bg-white/10 hover:bg-white/20 text-white px-5 py-2 rounded-full text-sm font-medium border border-white/20 transition">
-            Sign Up</button>
-    </nav>
 
+            <ul class="hidden md:flex space-x-6 text-sm text-slate-300">
+                <li class="hover:text-white cursor-pointer transition">Home</li>
+                <li class="hover:text-white cursor-pointer transition">Agents</li>
+                <li class="hover:text-white cursor-pointer transition">Use Cases</li>
+                <li class="hover:text-white cursor-pointer transition">Pricing</li>
+                <li class="hover:text-white cursor-pointer transition">Docs</li>
+            </ul>
+
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden sm:block bg-white/10 hover:bg-white/20 text-white px-5 py-2 rounded-full text-sm font-medium border border-white/20 transition">
+                    Sign Up
+                </button>
+
+                <label for="menu-toggle" class="md:hidden cursor-pointer text-slate-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <div
+            class="hidden peer-checked:flex flex-col md:hidden absolute top-full left-0 w-full bg-[#020617] border-b border-white/10 p-6 space-y-4 animate-in fade-in slide-in-from-top-2">
+            <ul class="flex flex-col space-y-4 text-slate-300">
+                <li class="hover:text-white cursor-pointer transition">Home</li>
+                <li class="hover:text-white cursor-pointer transition">Agents</li>
+                <li class="hover:text-white cursor-pointer transition">Use Cases</li>
+                <li class="hover:text-white cursor-pointer transition">Pricing</li>
+                <li class="hover:text-white cursor-pointer transition">Docs</li>
+            </ul>
+            <button
+                class="w-full bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-xl text-sm font-medium transition">
+                Sign Up
+            </button>
+        </div>
+    </nav>
     <!-- Main Content -->
     <!--First section-->
     <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-4">
@@ -67,20 +95,22 @@
             </p>
 
             <!--Create account button-->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button
-                    class="bg-[#C2410C] hover:bg-[#EA580C] text-white px-10 py-4 rounded-full font-semibold text-lg transition-all w-full sm:w-auto shadow-lg shadow-orange-900/20">
-                    Create Account
-                </button>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-2xl mx-auto px-6">
 
-                <!--Watch Demo button-->
                 <button
-                    class="flex items-center gap-2 bg-white/5 hover:bg-white/10 text-white border border-white/20 px-10 py-4 rounded-full font-semibold text-lg transition-all w-full sm:w-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <polygon points="6 3 20 12 6 21 6 3" />
-                    </svg>
-                    Watch Demo</button>
+                    class="w-full sm:w-80 bg-white/5 hover:bg-white/10 backdrop-blur-sm text-white border border-white/10 px-8 py-4 rounded-full font-medium text-lg transition-all duration-300 shadow-xl shadow-black/5">
+                    Create Agent
+                </button>
+            <!--Watch Demo button-->
+                <button
+                    class="w-full sm:w-80 flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 backdrop-blur-sm text-white border border-white/10 px-8 py-4 rounded-full font-medium text-lg transition-all duration-300 shadow-xl shadow-black/5">
+                    <div class="flex items-center justify-center w-6 h-6 border-2 border-white rounded-full">
+                        <svg class="w-3 h-3 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    Watch Demo
+                </button>
             </div>
         </div>
     </section>
@@ -101,16 +131,8 @@
                     <span class="text-xl font-bold">Spotify</span>
                 </div>
                 <span class="text-2xl font-black tracking-widest text-white">ROLAND</span>
-                <div class="flex items-center gap-2 text-white">
-                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                    <span class="text-xl font-semibold italic">Instagram</span>
-                </div>
-                <span
-                    class="text-2xl font-black italic text-white underline decoration-orange-500 underline-offset-4">Fender</span>
+                
+                <span class="text-2xl font-black italic text-white underline decoration-orange-500 underline-offset-4">Fender</span>
                 <div class="flex items-center gap-3 text-white">
                     <div class="flex gap-1">
                         <div class="w-1 h-6 bg-white"></div>
